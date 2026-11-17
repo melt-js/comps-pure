@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- hel-standalone：给 src/style.css 里的调试页样式做作用域，避免 hel_dist 把页面级样式注入宿主 -->
+<html lang="en" class="hel-standalone">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>comps-pure</title>
+    <!--
+      vue 被 external 成 window.Vue，独立访问本页时由这里的 CDN 提供运行时；
+      data-helappend="0"：宿主通过 hel 解析本页时跳过该脚本，
+      使用宿主 bindVueRuntime 注入的那一份 vue，避免双 vue 导致响应式失效。
+
+      element-plus / tippy 的样式同理：宿主（pure-admin）自己已引入，
+      这里只给独立调试页用，data-helappend="0" 保证不会重复注入宿主页面。
+    -->
+    <script
+      data-helappend="0"
+      src="https://unpkg.com/vue@3.5.45/dist/vue.global.prod.js"
+    ></script>
+    <script
+      data-helappend="0"
+      src="https://unpkg.com/element-plus@2.14.7/dist/index.full.min.js"
+    ></script>
+    <link
+      data-helappend="0"
+      rel="stylesheet"
+      href="https://unpkg.com/element-plus@2.14.7/dist/index.css"
+    />
+    <link
+      data-helappend="0"
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6.3.7/dist/tippy.css"
+    />
+    <script type="module" crossorigin src="/comps-pure/hel_dist/assets/index-DUoR47io.js"></script>
+    <link rel="modulepreload" crossorigin href="/comps-pure/hel_dist/assets/__uno-D9UoBb6V.js">
+    <link rel="modulepreload" crossorigin href="/comps-pure/hel_dist/assets/shared-runtime-D4yKVfkJ.js">
+    <link rel="modulepreload" crossorigin href="/comps-pure/hel_dist/assets/__vite-browser-external-D7Ct-6yo.js">
+    <link rel="modulepreload" crossorigin href="/comps-pure/hel_dist/assets/vendor-ChpGHtIM.js">
+    <link rel="stylesheet" crossorigin href="/comps-pure/hel_dist/assets/style-CUrhOlAJ.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
