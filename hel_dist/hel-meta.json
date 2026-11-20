@@ -6,7 +6,7 @@
     "online_version": "2026.11.16-1",
     "build_version": "2026.11.16-1",
     "platform": "unpkg",
-    "create_at": "2026-11-19T12:09:02.520Z"
+    "create_at": "2026-11-20T17:18:18.631Z"
   },
   "version": {
     "plugin_ver": "5.4.3",
@@ -140,7 +140,7 @@
       "srvModSrcIndex": ""
     },
     "html_content": "<!doctype html>\n<!-- hel-standalone：给 src/style.css 里的调试页样式做作用域，避免 hel_dist 把页面级样式注入宿主 -->\n<html lang=\"en\" class=\"hel-standalone\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>comps-pure</title>\n    <!--\n      vue 被 external 成 window.Vue，独立访问本页时由这里的 CDN 提供运行时；\n      data-helappend=\"0\"：宿主通过 hel 解析本页时跳过该脚本，\n      使用宿主 bindVueRuntime 注入的那一份 vue，避免双 vue 导致响应式失效。\n\n      element-plus / tippy 的样式同理：宿主（pure-admin）自己已引入，\n      这里只给独立调试页用，data-helappend=\"0\" 保证不会重复注入宿主页面。\n    -->\n    <script\n      data-helappend=\"0\"\n      src=\"https://unpkg.com/vue@3.5.45/dist/vue.global.prod.js\"\n    ></script>\n    <script\n      data-helappend=\"0\"\n      src=\"https://unpkg.com/element-plus@2.14.7/dist/index.full.min.js\"\n    ></script>\n    <link\n      data-helappend=\"0\"\n      rel=\"stylesheet\"\n      href=\"https://unpkg.com/element-plus@2.14.7/dist/index.css\"\n    />\n    <link\n      data-helappend=\"0\"\n      rel=\"stylesheet\"\n      href=\"https://unpkg.com/tippy.js@6.3.7/dist/tippy.css\"\n    />\n    <script type=\"module\" crossorigin src=\"/comps-pure/hel_dist/assets/index-Dym6frqP.js\"></script>\n    <link rel=\"modulepreload\" crossorigin href=\"/comps-pure/hel_dist/assets/__uno-D9UoBb6V.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/comps-pure/hel_dist/assets/shared-runtime-D4yKVfkJ.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/comps-pure/hel_dist/assets/__vite-browser-external-D7Ct-6yo.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/comps-pure/hel_dist/assets/vendor-ChpGHtIM.js\">\n    <link rel=\"stylesheet\" crossorigin href=\"/comps-pure/hel_dist/assets/style-CrP-i6Qb.css\">\n  </head>\n  <body>\n    <div id=\"app\"></div>\n  </body>\n</html>\n",
-    "create_at": "2026-11-19T12:09:02.520Z",
+    "create_at": "2026-11-20T17:18:18.631Z",
     "desc": "this version meta is created by hel-dev-utils@5.4.3"
   }
 }
