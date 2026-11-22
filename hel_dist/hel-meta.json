@@ -3,31 +3,31 @@
     "name": "comps-pure",
     "app_group_name": "comps-pure",
     "git_repo_url": "",
-    "online_version": "2026.11.16-1",
-    "build_version": "2026.11.16-1",
+    "online_version": "2026.11.22",
+    "build_version": "2026.11.22",
     "platform": "unpkg",
-    "create_at": "2026-11-21T05:38:25.663Z"
+    "create_at": "2026-11-22T20:31:31.774Z"
   },
   "version": {
     "plugin_ver": "5.4.3",
     "extract_mode": "build",
     "sub_app_name": "comps-pure",
-    "sub_app_version": "comps-pure@2026.11.16-1",
-    "version_tag": "2026.11.16-1",
+    "sub_app_version": "comps-pure@2026.11.22",
+    "version_tag": "2026.11.22",
     "src_map": {
       "webDirPath": "/comps-pure/hel_dist",
       "htmlIndexSrc": "/comps-pure/hel_dist/index.html",
       "extractMode": "all",
       "iframeSrc": "",
       "chunkCssSrcList": [
-        "/comps-pure/hel_dist/assets/style-Bo595TPc.css"
+        "/comps-pure/hel_dist/assets/style-B1oKKNvJ.css"
       ],
       "chunkJsSrcList": [
-        "/comps-pure/hel_dist/assets/index-y4vUdEw_.js",
+        "/comps-pure/hel_dist/assets/index-CXQGZ2qD.js",
         "/comps-pure/hel_dist/assets/__uno-D9UoBb6V.js",
         "/comps-pure/hel_dist/assets/__vite-browser-external-D7Ct-6yo.js",
-        "/comps-pure/hel_dist/assets/shared-runtime-D4yKVfkJ.js",
-        "/comps-pure/hel_dist/assets/vendor-CnTVY2I_.js"
+        "/comps-pure/hel_dist/assets/shared-runtime-C954vlNa.js",
+        "/comps-pure/hel_dist/assets/vendor-D6fM9tO8.js"
       ],
       "staticCssSrcList": [
         "https://unpkg.com/element-plus@2.14.7/dist/index.css",
@@ -74,7 +74,7 @@
           "tag": "script",
           "append": true,
           "attrs": {
-            "src": "/comps-pure/hel_dist/assets/index-y4vUdEw_.js",
+            "src": "/comps-pure/hel_dist/assets/index-CXQGZ2qD.js",
             "type": "module",
             "crossorigin": ""
           }
@@ -92,7 +92,7 @@
           "tag": "link",
           "append": true,
           "attrs": {
-            "href": "/comps-pure/hel_dist/assets/shared-runtime-D4yKVfkJ.js",
+            "href": "/comps-pure/hel_dist/assets/shared-runtime-C954vlNa.js",
             "rel": "modulepreload",
             "crossorigin": ""
           }
@@ -110,7 +110,7 @@
           "tag": "link",
           "append": true,
           "attrs": {
-            "href": "/comps-pure/hel_dist/assets/vendor-CnTVY2I_.js",
+            "href": "/comps-pure/hel_dist/assets/vendor-D6fM9tO8.js",
             "rel": "modulepreload",
             "crossorigin": ""
           }
@@ -119,7 +119,7 @@
           "tag": "link",
           "append": true,
           "attrs": {
-            "href": "/comps-pure/hel_dist/assets/style-Bo595TPc.css",
+            "href": "/comps-pure/hel_dist/assets/style-B1oKKNvJ.css",
             "rel": "stylesheet",
             "crossorigin": ""
           }
@@ -128,10 +128,10 @@
       "bodyAssetList": [],
       "otherSrcList": [
         "/comps-pure/hel_dist/assets/iconfont-Dy7kOYXq.svg",
-        "/comps-pure/hel_dist/assets/index-y4vUdEw_.js.gz",
-        "/comps-pure/hel_dist/assets/shared-runtime-D4yKVfkJ.js.gz",
-        "/comps-pure/hel_dist/assets/style-Bo595TPc.css.gz",
-        "/comps-pure/hel_dist/assets/vendor-CnTVY2I_.js.gz",
+        "/comps-pure/hel_dist/assets/index-CXQGZ2qD.js.gz",
+        "/comps-pure/hel_dist/assets/shared-runtime-C954vlNa.js.gz",
+        "/comps-pure/hel_dist/assets/style-B1oKKNvJ.css.gz",
+        "/comps-pure/hel_dist/assets/vendor-D6fM9tO8.js.gz",
         "/comps-pure/hel_dist/index.html",
         "/comps-pure/hel_dist/static/bg.png",
         "/comps-pure/hel_dist/static/user.jpg"
@@ -139,8 +139,8 @@
       "srvModSrcList": [],
       "srvModSrcIndex": ""
     },
-    "html_content": "<!doctype html>\n<!-- hel-standalone：给 src/style.css 里的调试页样式做作用域，避免 hel_dist 把页面级样式注入宿主 -->\n<html lang=\"en\" class=\"hel-standalone\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>comps-pure</title>\n    <!--\n      vue 被 external 成 window.Vue，独立访问本页时由这里的 CDN 提供运行时；\n      data-helappend=\"0\"：宿主通过 hel 解析本页时跳过该脚本，\n      使用宿主 bindVueRuntime 注入的那一份 vue，避免双 vue 导致响应式失效。\n\n      element-plus / tippy 的样式同理：宿主（pure-admin）自己已引入，\n      这里只给独立调试页用，data-helappend=\"0\" 保证不会重复注入宿主页面。\n    -->\n    <script\n      data-helappend=\"0\"\n      src=\"https://unpkg.com/vue@3.5.45/dist/vue.global.prod.js\"\n    ></script>\n    <script\n      data-helappend=\"0\"\n      src=\"https://unpkg.com/element-plus@2.14.7/dist/index.full.min.js\"\n    ></script>\n    <link\n      data-helappend=\"0\"\n      rel=\"stylesheet\"\n      href=\"https://unpkg.com/element-plus@2.14.7/dist/index.css\"\n    />\n    <link\n      data-helappend=\"0\"\n      rel=\"stylesheet\"\n      href=\"https://unpkg.com/tippy.js@6.3.7/dist/tippy.css\"\n    />\n    <script type=\"module\" crossorigin src=\"/comps-pure/hel_dist/assets/index-y4vUdEw_.js\"></script>\n    <link rel=\"modulepreload\" crossorigin href=\"/comps-pure/hel_dist/assets/__uno-D9UoBb6V.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/comps-pure/hel_dist/assets/shared-runtime-D4yKVfkJ.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/comps-pure/hel_dist/assets/__vite-browser-external-D7Ct-6yo.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/comps-pure/hel_dist/assets/vendor-CnTVY2I_.js\">\n    <link rel=\"stylesheet\" crossorigin href=\"/comps-pure/hel_dist/assets/style-Bo595TPc.css\">\n  </head>\n  <body>\n    <div id=\"app\"></div>\n  </body>\n</html>\n",
-    "create_at": "2026-11-21T05:38:25.663Z",
+    "html_content": "<!doctype html>\n<!-- hel-standalone：给 src/style.css 里的调试页样式做作用域，避免 hel_dist 把页面级样式注入宿主 -->\n<html lang=\"en\" class=\"hel-standalone\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>comps-pure</title>\n    <!--\n      vue 被 external 成 window.Vue，独立访问本页时由这里的 CDN 提供运行时；\n      data-helappend=\"0\"：宿主通过 hel 解析本页时跳过该脚本，\n      使用宿主 bindVueRuntime 注入的那一份 vue，避免双 vue 导致响应式失效。\n\n      element-plus / tippy 的样式同理：宿主（pure-admin）自己已引入，\n      这里只给独立调试页用，data-helappend=\"0\" 保证不会重复注入宿主页面。\n    -->\n    <script\n      data-helappend=\"0\"\n      src=\"https://unpkg.com/vue@3.5.45/dist/vue.global.prod.js\"\n    ></script>\n    <script\n      data-helappend=\"0\"\n      src=\"https://unpkg.com/element-plus@2.14.7/dist/index.full.min.js\"\n    ></script>\n    <link\n      data-helappend=\"0\"\n      rel=\"stylesheet\"\n      href=\"https://unpkg.com/element-plus@2.14.7/dist/index.css\"\n    />\n    <link\n      data-helappend=\"0\"\n      rel=\"stylesheet\"\n      href=\"https://unpkg.com/tippy.js@6.3.7/dist/tippy.css\"\n    />\n    <script type=\"module\" crossorigin src=\"/comps-pure/hel_dist/assets/index-CXQGZ2qD.js\"></script>\n    <link rel=\"modulepreload\" crossorigin href=\"/comps-pure/hel_dist/assets/__uno-D9UoBb6V.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/comps-pure/hel_dist/assets/shared-runtime-C954vlNa.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/comps-pure/hel_dist/assets/__vite-browser-external-D7Ct-6yo.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/comps-pure/hel_dist/assets/vendor-D6fM9tO8.js\">\n    <link rel=\"stylesheet\" crossorigin href=\"/comps-pure/hel_dist/assets/style-B1oKKNvJ.css\">\n  </head>\n  <body>\n    <div id=\"app\"></div>\n  </body>\n</html>\n",
+    "create_at": "2026-11-22T20:31:31.774Z",
     "desc": "this version meta is created by hel-dev-utils@5.4.3"
   }
 }
