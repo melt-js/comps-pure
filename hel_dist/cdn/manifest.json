@@ -1,6 +1,6 @@
 {
   "name": "@melt-js/comps-pure",
-  "version": "2026.11.22",
+  "version": "2026.11.24-1",
   "entries": {
     "@melt-js/comps-pure": {
       "specifier": "@melt-js/comps-pure",
